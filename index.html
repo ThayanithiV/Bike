@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Accessories</title>
+    <!-----------------------------Css---------->
+    <link rel="stylesheet" href="style.css">
+    <!---------------------------------boostrap--------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---------------------------------font--------------->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!------------------------Nav----------------------------->
+    <nav class="navbar  navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BIKERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Accessories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Helmet.html" target="_blank">Helmet</a></li>
+                  <li><a class="dropdown-item" href="#">Gloves</a></li>
+                  <li><a class="dropdown-item" href="#">Chain Lube</a></li>
+                  <li><a class="dropdown-item" href="#">Riding Shoes</a></li>
+                  <li><a class="dropdown-item" href="#">Riding Jackets</a></li>
+                  <li><a class="dropdown-item" href="#">Frame sliders</a></li>
+                  <li><a class="dropdown-item" href="#">Seat Cover</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!----------------------------------Home---------------------------------------->
+<div id="home">
+    <div class="container d-lg-md-sm-block">
+        <div class="heading z-">
+            <h1><i class="fa fa-motorcycle"></i><br>WELCOME TO OUR SHOP</h1>
+        </div>  
+    </div>
+<div class="image">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Main/Bike-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Main/Bike-6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Main/Bike-1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<!------------------------Gallery---------------------->
+<div id="gallery">
+    <div class="gallery pt-5">
+        <div class="head align-items-center">
+            <h2>GALLERY</h2>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                <div class="card">
+                    <img src="images/Gallery/b1.jpg" class="card-img" alt="...">
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="5">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/Gallery/Carousal/b2.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/Gallery/Carousal/b2-2.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/Gallery/Carousal/b2-1.jpg" class="d-block w-100">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <img src="images/Gallery/b3.jpg" class="card-img" alt="...">
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <img src="images/Gallery/b4.jpg" class="card-img" alt="...">
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="images/Gallery/b5.jpg" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="images/Gallery/b6.jpg" class="card-img" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<!----------------------helmet---------------------------->
+
+
+
+
+
+
+
+
+    <!---------Script------------->
+    <script src="script.js"></script>
+    <!---------------------------------boostrap--------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-----------------------fontawsome------------------------------->
+    <script src="https://kit.fontawesome.com/d11d77c65b.js" crossorigin="anonymous"></script>
+</body>
+</html>

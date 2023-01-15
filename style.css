@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,300&family=Quicksand:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar
+{
+    background-color: bisque;
+    font-weight:500;
+    z-index: 1 ;
+    box-shadow:goldenrod;
+    position: sticky !important;
+    top: 0px !important ;
+}
+.navbar-nav {
+    align-items: center !important;
+}
+.nav-item .nav-link:hover
+{
+    background-color:rgb(165, 138, 106);
+    color: rgb(170, 21, 21) !important;
+    padding: 5px 10px;
+    border-radius: 3px;
+    filter: brightness(2);
+
+}
+.image
+{
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+  /* background-position: center;*/
+  filter: blur(8px);
+  position: relative;
+}
+.heading
+{
+    text-align: center;
+    letter-spacing: 5;
+    color: rgb(255, 255, 255);
+    top: 60%;
+    left: 30%;
+    position:absolute;
+    justify-content: center;
+    z-index: 1;
+}
+h1 .fa{
+    color: rgb(204, 113, 80);
+    font-size: larger;
+}
+.heading h1{
+    letter-spacing: 10;
+    font-weight: 900;
+}
+
+/*---------------Gallery------------*/
+
+.head{
+    text-align: center;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+.gallery 
+{
+    background-color: rgb(163, 178, 179);
+}
+.card:hover
+{
+    box-shadow: -18px -20px 20px 0px rgb(8, 8, 8);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.card
+{
+    border-radius: 50px;
+}
+.card img:hover
+{
+    filter: blur(5%);
+}

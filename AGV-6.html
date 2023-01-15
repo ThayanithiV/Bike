@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helmets</title>
+    <!-----------------------------Css---------->
+    <link rel="stylesheet" href="style.css">
+    <!---------------------------------boostrap--------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---------------------------------font--------------->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .helmet select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .helmet input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .helmet input:focus{
+            outline: none;
+        }
+        .tab-contents{
+        display: none;
+       }
+      .tab-contents.active-tab{
+        display: block;
+      }
+      .active-link:hover{
+        color: #fff;
+        background-color: crimson;
+      }
+      button{
+        color: #fff;
+        background-color: cadetblue;
+        border: none;
+        border-radius: 6px;
+      }
+      .tab-contents h4{
+        font-weight: 600;
+        font-size: medium;
+      }
+      .tab-contents ul{
+        list-style:circle;
+      }
+      .tab-contents ul li{
+        font-size: 15px;
+      }
+      
+    </style>
+
+</head>
+<body>
+    <!------------------------Nav----------------------------->
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BIKERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Accessories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Helmet.html">Helmet</a></li>
+                  <li><a class="dropdown-item" href="#">Gloves</a></li>
+                  <li><a class="dropdown-item" href="#">Chain Lube</a></li>
+                  <li><a class="dropdown-item" href="#">Riding Shoes</a></li>
+                  <li><a class="dropdown-item" href="#">Riding Jackets</a></li>
+                  <li><a class="dropdown-item" href="#">Frame sliders</a></li>
+                  <li><a class="dropdown-item" href="#">Seat Cover</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+<!----------------------helmet---------------------------->
+
+    <section class="container helmet my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-5 col-12">
+                <img class="img-fluid w-100 pb-1 " src="images/helmets/AGV-6.png" id="main-img"  alt="...">
+                    <div class="small-img-group">
+                        <div class="small-img-col">
+                            <img src="images/helmets/AGV-6.png" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/helmets/AGV-6-1.png" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/helmets/AGV-6-2.png" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/helmets/AGV-6-3.png" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/helmets/AGV-6-4.png" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/helmets/AGV-6-5.png" width="100%" class="small-img" alt="">
+                        </div>
+                    </div>
+            </div>
+            <div class="cols-lg-7 col-md-7 col-12">
+                <h6 class="">Home / Helmet</h6>
+                <h3 class="py-4">PISTA GP RR AGV ECE-DOT LIMITED EDITION - WINTER TEST 2005</h3>
+                <h2>$1706.16</h2>
+                <select class="my-3">
+                    <option>Select Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>XXXL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="btn btn-secondary">Add to Cart</button>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <span>This limited edition livery is the replica of the one worn by <b>Valentino Rossi</b> during the Sepang tests in November 2004. Never seen before limited edition based on our 100% carbon-fiber racing helmet used by <b>MotoGP™ riders</b>.</span>
+                
+                <div class="tab-titles btn-box pt-4">
+                    <button class="tab-links active-link p-2 me-4" onclick="opentab('details')">More Details</button>
+                    <button class="tab-links p-2 me-4" onclick="opentab('spec')">Specification</button>
+                </div>
+                <div class="tab-contents active-tab pt-3" id="details">
+                    <br>The helmet created for <b>MotoGP™</b> is now available to every rider also in this never seen before replica graphic.
+                    <br>This livery is the replica of the one worn during the Sepang tests in <b>November 2004</b>. Rossi was fresh from what might have been the best season of his career, when he won on a new bike for the first time, leading Yamaha to their first victory in the premier class since 1992. The idea of the Dash graphic was born to celebrate a splendid season, using a logo that had entered into Italian homes through television, just as <b>Valentino</b> had been doing for a few years. The slogan from the famous detergent brand “Dash, it doesn’t get any whiter” became for the occasion “Rossi, it doesn’t get any faster”.
+                    Besides the big colorful logo, the shell of the AGV Ti-Tech helmet also had a small number 1 on the front which celebrated the world championship title: the fourth consecutive win and sixth win total for the Italian from Pesaro. The back of the helmet features a little washing machine with a small instruction manual on how to win all class championships, at 46°C of course. Then there are the ever-present sun and moon, elements that distinguish <b>Valentino’s</b> helmets since the beginning of his career.
+                </div>
+                <div class="tab-contents pt-3" id="spec">
+                    <h4>ACCESSORIES INCLUDED</h4>
+                    <ul>
+                        <li>Earplugs</li>
+                       <li>Elettro Iridium visor (Only for PISTA GP RR - FUTURO)</li>
+                       <li>Fuoco Iridium visor (Only for PISTA GP RR - ANNO 75)</li>
+                       <li>Hydration system</li>
+                       <li>Interiors customization kit: top crown pad, rear crown pad, cheek pads</li>
+                       <li>Iridium Red visor (Only for PISTA GP RR - SPECIALE)</li>
+                       <li>Mir letter (Only for PISTA GP RR - MIR WINTER TEST 2021)</li>
+                       <li>Smoke visor (Only for "I caschi di Vale", PISTA GP RR - IRIDIUM CARBON, RED CARBON, ITALIA CARBONIO FORGIATO)</li>
+                       <li>Tear-off kit</li>
+                       <li>Valentino Rossi's letter (Only for I caschi di Vale)</li>
+                       <li>Vents covers</li>
+                    </ul>
+                    <h4>AERODYNAMICS</h4>
+                    <ul>
+                        <li>Detachable PRO Spoiler</li>
+                        <li>Race suit fitment</li>
+                    </ul>
+                    <h4>INTERIORS</h4>
+                    <ul>
+                        <li>2Dry: instant sweat absorption</li>
+                        <li>360° Adaptive fit</li>
+                        <li>3-piece adaptable crown pad fit</li>
+                        <li>Cheek pads safety release system</li>
+                        <li>Cheek pads: Shalimar fabric for soft and stable fit even at high speed</li>
+                        <li>Crown pad: elastic and breathable microfiber</li>
+                        <li>Embracing neck roll profile</li>
+                        <li>Microsense: premium skin comfort</li>
+                        <li>Neck roll: breathable fabric with elastic and waterproof inserts</li>
+                        <li>No stitches in sensitive areas</li>
+                        <li>Removable and washable interiors</li>
+                        <li>Removable nose guard</li>
+                        <li>Removable wind protector</li>
+                    </ul>
+                    <h4>RETENTION SYSTEM</h4>
+                    <ul>
+                        <li>Titanium Double D</li>
+                    </ul>
+                    <h4>SHELL</h4>
+                    <ul>
+                        <li>100% Carbon fiber</li>
+                        <li>4 shell sizes</li>
+                        <li>5-density EPS developed in 4 sizes</li>
+                        <li>Collarbone safe profile</li>
+                        <li>Shell and EPS structure designed to minimize rotational accelerations (FIM homologated)</li>
+                    </ul>
+                    <h4>VENTILATION</h4>
+                    <ul>
+                        <li>2 rear extractors</li>
+                        <li>5 front vents</li>
+                        <li>Metal air vents and extractors</li>
+                    </ul>
+                    <h4>VISOR</h4>
+                    <ul>
+                        <li>100% Max Vision Pinlock (120) included</li>
+                        <li>190° horizontal field of view</li>
+                        <li>5mm thickness</li>
+                        <li>85° vertical field of view</li>
+                        <li>Anti-scratch</li>
+                        <li>Metal visor mechanism</li>
+                        <li>Micro-opening system</li>
+                        <li>Optic class 1</li>
+                        <li>Patented Extra Quick Release System</li>
+                        <li>Patented visor lock system</li>                    
+                    </ul>
+                    <h4>WEIGHT</h4>
+                    <ul>
+                        <li>1.450 g in first shell size</li>
+                    </ul>
+                </div>  
+         
+    </section>
+    <!---------Script------------->
+    <script src="script-6.js"></script>
+    <!---------------------------------boostrap--------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-----------------------fontawsome------------------------------->
+    <script src="https://kit.fontawesome.com/d11d77c65b.js" crossorigin="anonymous"></script>
+    <script>
+        var mainimg = document.getElementById('main-img');
+        var smallimg = document.getElementsByClassName('small-img');
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+        }
+        smallimg[4].onclick = function(){
+            mainimg.src = smallimg[4].src;
+        }
+        smallimg[5].onclick = function(){
+            mainimg.src = smallimg[5].src;
+        }
+    </script>
+    
+</body>
+</html>
